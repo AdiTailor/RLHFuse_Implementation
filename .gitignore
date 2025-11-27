@@ -1,0 +1,4 @@
+outputs/
+*.bin
+*.pt
+*.safetensors
