@@ -1,0 +1,25 @@
+# -----------------------------
+# PyTorch + CUDA (12.1 wheel, compatible with CUDA 13 driver)
+# -----------------------------
+torch==2.3.0+cu121
+torchvision==0.18.0+cu121
+torchaudio==2.3.0+cu121
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+# -----------------------------
+# HuggingFace Stack (safe versions)
+# -----------------------------
+transformers==4.36.2
+peft==0.10.0
+accelerate==0.30.1
+datasets>=2.14.0
+tokenizers>=0.14.0
+
+# -----------------------------
+# Utilities
+# -----------------------------
+einops>=0.7.0
+tqdm>=4.66.0
+numpy>=1.24.0
+scipy>=1.11.0
+sentencepiece>=0.1.99
