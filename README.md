@@ -155,11 +155,13 @@ You can customize hyperparameters (dataset size, number of PPO iterations, LoRA 
 
 ---
 
-## 7. Metrics & Visualizations
+## 6. Metrics & Visualizations
 
 The script logs metrics via a `PerformanceMetricsTracker` and generates multiple figures.
 
-### 7.1 `training_metrics.jpg`
+### 6.1 Training Metrics
+<img width="476" height="356" alt="training_metrics" src="https://github.com/user-attachments/assets/18b25fff-4338-4b75-b693-1f794728e8dd" />
+
 
 Four panels:
 
@@ -172,7 +174,8 @@ Four panels:
 - **Reward Distribution:**  
   Histogram of reward values with a vertical line at the mean (≈ 3.36).
 
-### 7.2 `summary_dashboard.jpg` – RLHFuse Performance Dashboard
+### 6.2 RLHFuse Performance Dashboard
+ <img width="482" height="332" alt="summary_dashboard" src="https://github.com/user-attachments/assets/91e7926e-0e31-447b-86e2-0c8288efa946" />
 
 A single slide summarizing:
 
@@ -191,21 +194,25 @@ A single slide summarizing:
 - **Efficiency Gains Panel:**  
   Text summary of inter‑stage fusion, intra‑stage fusion, GPU utilization, and memory efficiency (hidden‑state caching).
 
-### 7.3 `gpu_memory_usage.jpg`
+### 6.3 GPU Memory Usage
+<img width="477" height="177" alt="gpu_memory_usage" src="https://github.com/user-attachments/assets/9fdfe068-dfa3-452e-b697-ded3ee610bbb" />
+
 
 - **Left:** Allocated GPU memory vs iteration, hovering between ~2.4–2.5 GB with healthy fluctuations that track workload.
 - **Right:** Reserved GPU memory vs iteration, flat at ~3.71 GB, indicating no memory leaks and stable allocation behavior.
 
-### 7.4 `throughput_over_time.jpg`
+### 6.4 Throughput Comparison
+<img width="357" height="177" alt="throughput_over_time" src="https://github.com/user-attachments/assets/902b508e-65c4-4c07-999b-3bbe07e6ac4e" />
 
 - Throughput (samples/sec) vs iteration.
 - After a warm‑up iteration, throughput stabilizes in the 5.0–5.9 samples/sec range.
 - A dashed line shows the average throughput.
 
-### 7.5 `speedup_comparison.jpg`
+### 6.5 Speedup comparison
+<img width="477" height="177" alt="speedup_comparison" src="https://github.com/user-attachments/assets/39506c39-6966-4078-884d-0df689a40134" />
 
 Two bar charts:
-- **End‑to‑End Throughput Comparison:**
+- End‑to‑End Throughput Comparison:
 
 
 
